@@ -35,6 +35,32 @@
 
 	<article>
 	
+		<h1><a href="/2017/09/07/Python函数学习/">Python函数学习</a></h1>
+	
+	<div class="article__infos">
+		<span class="article__date">2017-09-07</span><br />
+		
+		
+	</div>
+
+	
+
+	
+		<p>##1.默认参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">def power(x, n=2):</div><div class="line">    s = 1</div><div class="line">    while n &gt; 0:</div><div class="line">        n = n - 1</div><div class="line">        s = s * x</div><div class="line">    return s</div></pre></td></tr></table></figure></p>
+<p>##2.可变参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def enroll(name, gender, age=6, city=&apos;Beijing&apos;):</div><div class="line">    print &apos;name:&apos;, name</div><div class="line">    print &apos;gender:&apos;, gender</div><div class="line">    print &apos;age:&apos;, age</div><div class="line">    print &apos;city:&apos;, city</div></pre></td></tr></table></figure></p>
+<p>##3.关键字参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def calc(*numbers):</div><div class="line">    sum = 0</div><div class="line">    for n in numbers:</div><div class="line">        sum = sum + n * n</div><div class="line">    return sum</div></pre></td></tr></table></figure></p>
+
+	
+
+	
+
+</article>
+
+
+
+
+	<article>
+	
 		<h1><a href="/2017/09/03/流程图/">流程图</a></h1>
 	
 	<div class="article__infos">
@@ -242,31 +268,6 @@
 
 	
 		<figure class="highlight c"><figcaption><span>[hello.c] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">	<span class="built_in">printf</span>(<span class="string">"Hello World\n"</span>);</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-	
-
-	
-
-</article>
-
-
-
-
-	<article>
-	
-		<h1><a href="/2017/07/07/hello-world-2-0/">hello world 2.0</a></h1>
-	
-	<div class="article__infos">
-		<span class="article__date">2017-07-07</span><br />
-		
-		
-	</div>
-
-	
-
-	
-		<p>hexo搭建博客时出现乱码问题解决方案：<br><a href="http://blog.csdn.net/jiluben/article/details/40656935" target="_blank" rel="external">http://blog.csdn.net/jiluben/article/details/40656935</a><br>1.对于post文件夹中的博客文件 编码应为“UTF-8”；<br>2.重新生成，部署，乱码就取消。</p>
-<p>—-于杭师大恕园4号楼1107寝室完成</p>
-
 	
 
 	
